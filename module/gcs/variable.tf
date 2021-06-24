@@ -28,11 +28,6 @@ variable "storage_class" {
   default = "REGIONAL"
 }
 
-variable "bucket_policy_only" {
-  type    = bool
-  default = true
-}
-
 variable "iam_members" {
   type = list(object({
     role   = string
