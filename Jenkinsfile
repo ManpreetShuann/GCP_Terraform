@@ -16,9 +16,9 @@ pipeline {
                 sh 'terraform validate'
             }
         }
-        stage ("terrafrom plan") {
+        stage ("terraform plan") {
             steps {
-                sh 'terraform plan '
+                sh 'terraform plan -out=plan'
             }
         }
         stage ("terraform apply") {
@@ -35,6 +35,12 @@ pipeline {
     post { 
         always { 
             cleanWs()
+        }
+        success{
+            echo 'SUCCESS'
+        }
+        failure{
+            echo 'FAILURE'
         }
     }
 }
