@@ -4,7 +4,7 @@ module "test-bucket-1" {
   project_id = var.project_name
   iam_members = [
     {
-      role   = "roles/roles/storage.objectViewer"
+      role   = "roles/storage.objectViewer"
       member = "serviceAccount:jenkins@secops-316111.iam.gserviceaccount.com"
     }
   ]
