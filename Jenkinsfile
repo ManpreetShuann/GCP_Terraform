@@ -22,6 +22,11 @@ pipeline {
             }
         }
         stage ("terraform apply") {
+            when{
+                expression{
+                    BRANCH_NAME == 'master'
+                }
+            }
             steps {
                 sh 'terraform apply --auto-approve'
             }
