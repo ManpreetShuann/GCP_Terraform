@@ -1,5 +1,5 @@
 provider "template" {
-  version = "~>2.1.2"
+  #version = "~>2.1.2"  #### provider version nor needed anymore with the latest terraform update    #####
 }
 
 provider "google" {
