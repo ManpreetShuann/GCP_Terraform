@@ -1,2 +1,2 @@
 # GCP Terraform
-## Repository for GCP Tf Modules
+## Repository for GCP Terraform Modules
