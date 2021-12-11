@@ -1,2 +1,2 @@
 # GCP Terraform
-## Repository to test and create GCP Tf Modules
+## Repository for GCP Tf Modules
