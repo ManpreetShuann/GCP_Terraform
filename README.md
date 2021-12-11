@@ -1,3 +1,3 @@
 # GCP Terraform
 
-## Repository to test and create gcp modules
+## Repository for GCP Terraform Modules
